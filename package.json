@@ -1,0 +1,38 @@
+{
+  "name": "ti202-algo-sdd1-presentations",
+  "version": "1.0.0",
+  "description": "Cours Magistraux - Algorithmique et Structures de Données 1",
+  "scripts": {
+    "dev:cm1": "npx @slidev/cli CM1.md",
+    "dev:cm1-en": "npx @slidev/cli CM1-en.md",
+    "dev:cm2": "npx @slidev/cli CM2.md",
+    "dev:cm3": "npx @slidev/cli CM3.md",
+    "dev:cm4": "npx @slidev/cli CM4.md",
+    "dev:cm5": "npx @slidev/cli CM5.md",
+    "dev:cm6": "npx @slidev/cli CM6.md",
+    "build:cm1": "npx @slidev/cli build CM1.md --base /ti202-algo-sdd1-presentations/cm1/ --out dist/cm1",
+    "build:cm1-en": "npx @slidev/cli build CM1-en.md --base /ti202-algo-sdd1-presentations/cm1-en/ --out dist/cm1-en",
+    "build:cm2": "npx @slidev/cli build CM2.md --base /ti202-algo-sdd1-presentations/cm2/ --out dist/cm2",
+    "build:cm3": "npx @slidev/cli build CM3.md --base /ti202-algo-sdd1-presentations/cm3/ --out dist/cm3",
+    "build:cm4": "npx @slidev/cli build CM4.md --base /ti202-algo-sdd1-presentations/cm4/ --out dist/cm4",
+    "build:cm5": "npx @slidev/cli build CM5.md --base /ti202-algo-sdd1-presentations/cm5/ --out dist/cm5",
+    "build:cm6": "npx @slidev/cli build CM6.md --base /ti202-algo-sdd1-presentations/cm6/ --out dist/cm6",
+    "build": "npm run build:cm1 && npm run build:cm1-en && npm run build:cm2 && npm run build:cm3 && npm run build:cm4 && npm run build:cm5 && npm run build:cm6",
+    "export:cm1": "npx @slidev/cli export CM1.md --output exports/CM1.pdf",
+    "export:cm1-en": "npx @slidev/cli export CM1-en.md --output exports/CM1-en.pdf",
+    "export:cm2": "npx @slidev/cli export CM2.md --output exports/CM2.pdf",
+    "export:cm3": "npx @slidev/cli export CM3.md --output exports/CM3.pdf",
+    "export:cm4": "npx @slidev/cli export CM4.md --output exports/CM4.pdf",
+    "export:cm5": "npx @slidev/cli export CM5.md --output exports/CM5.pdf",
+    "export:cm6": "npx @slidev/cli export CM6.md --output exports/CM6.pdf",
+    "export": "npm run export:cm1 && npm run export:cm1-en && npm run export:cm2 && npm run export:cm3 && npm run export:cm4 && npm run export:cm5 && npm run export:cm6"
+  },
+  "keywords": ["slidev", "presentation", "algorithm", "data-structures"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-default": "latest",
+    "playwright-chromium": "^1.40.0"
+  }
+}
