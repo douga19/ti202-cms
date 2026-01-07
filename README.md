@@ -75,19 +75,6 @@ npm run export:cm1
 
 Le déploiement sur GitHub Pages se fait automatiquement via GitHub Actions lors d'un push sur la branche `main`.
 
-### Configuration requise
-Notes
-
-- Les scripts pour les 6 cours sont déjà configurés dans `package.json`
-- Créer simplement le fichier markdown correspondant (CM2.md, CM3.md, ... CM6.md)
-- Les commandes utilisent `npx @slidev/cli` pour exécuter Slidev localement
-- Les chemins de base (--base flag) sont configurés pour GitHub Pages
-- N'oubliez pas de mettre à jour `index.html` avec les liens vers les nouvelles présentations
-   "dev:cm2": "slidev CM2.md",
-   "build:cm2": "slidev build CM2.md --base /ti202-algo-sdd1-presentations/cm2/ --out dist/cm2",
-   ```
-3. Mettre à jour le script `build` pour inclure le nouveau cours
-4. Mettre à jour `index.html` avec le lien vers la nouvelle présentation
 
 ## 🛠️ Technologies
 
