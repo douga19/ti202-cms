@@ -87,9 +87,10 @@ a:hover {
 }
 
 blockquote {
-  border-left: 4px solid #ff43b8;
+  border-left: 10px solid #ff43b8;
   background: #f0f4f8;
-  padding: 1rem;
+  margin-top: 1em;
+  padding: 1em;
   border-radius: 4px;
   color: #163767;
 }
@@ -110,7 +111,7 @@ TI202 - Structure de données et Programmation 1
 
 1. **Présentation du langage C**
 
-2. **Éléments du langage C**
+2. **Variables, Types et Opérateurs**
    - Variables et Types
    - Opérateurs
    - Conversion de types
@@ -126,6 +127,11 @@ TI202 - Structure de données et Programmation 1
 </v-clicks>
 
 ---
+layout: intro
+---
+
+# Présentation du langage C
+---
 
 # Pourquoi le langage C ?
 
@@ -138,8 +144,11 @@ TI202 - Structure de données et Programmation 1
 - 🔗 **Assembleur de haut niveau** - proche de la machine
 - 🌍 **Très portable** - fonctionne partout
 - ⚡ **Code efficace** - performances optimales
-- 🏗️ **Fondation** pour d'autres langages (Perl, Java, Python, PHP...)
-
+- 🏗️ **Fondation** pour beaucoup d'applications: 
+  - Systèmes d'exploitation (Linux, Windows)
+  - Bases de données (MySQL, PostgreSQL)
+  - Outils de développement (GCC, Git)
+  - Langages modernes (Python, Java, etc.)
 </v-clicks>
 
 ---
@@ -310,13 +319,16 @@ int main() {
 └─────────────────┘
 ```
 
-⚠️ Afin de compiler et exécuter un programme C, vous aurez besoin d'un compilateur.
+### Compilateur
+
+- ⚠️ Afin de compiler et exécuter un programme C, vous aurez besoin d'un *compilateur*.
+- ✅ Nous utiliserons `gcc` dans le cadre du cours.
 
 </v-clicks>
 
 ---
 
-# 02 - Structure d'un programme C
+# Structure d'un programme C
 
 <v-clicks>
 
@@ -372,6 +384,12 @@ int sum;
 - 🚫 Commenter du code pour le désactiver temporairement
 
 </v-clicks>
+
+---
+layout: intro
+---
+
+# Variables, Types et Opérateurs 
 
 ---
 
@@ -618,7 +636,7 @@ x--;       // x vaut 6
 
 ---
 
-# Différence : Pré vs Post
+## Différence : Pré vs Post
 
 <v-clicks>
 
@@ -647,12 +665,12 @@ b = ++x;    // x = 4, puis b = 4
 
 | Opérateur | Nom | Effet | Exemple | Résultat |
 |-----------|-----|-------|---------|----------|
-| `==` | Égalité | Compare deux valeurs | `7 == 3` | `0` (faux) |
+| == | Égalité (double égal) | Compare deux valeurs | `7 == 3` | `0` (faux) |
 | `<` | Inférieur | Strictement inférieur | `7 < 10` | `1` (vrai) |
 | `<=` | Inférieur ou égal | Inférieur ou égal | `7 <= 7` | `1` (vrai) |
 | `>` | Supérieur | Strictement supérieur | `7 > 3` | `1` (vrai) |
 | `>=` | Supérieur ou égal | Supérieur ou égal | `7 >= 10` | `0` (faux) |
-| `!=` | Différent | Vérifier la différence | `7 != 3` | `1` (vrai) |
+| != | Différent (!=) | Vérifier la différence | `7 != 3` | `1` (vrai) |
 
 ### ⚠️ Important
 - Retourne `1` si vrai, `0` si faux
@@ -794,7 +812,7 @@ int main() {
 
 <v-click>
 
-### Solution moderne : `<stdbool.h>`
+### Depuis C99 : `<stdbool.h>` | Ne sera pas utilisé dans ce cours
 ```c
 #include <stdbool.h>
 int main() {
@@ -809,8 +827,14 @@ int main() {
 </v-click>
 
 ---
+layout: intro
+---
 
-# 03 - Entrées/Sorties en C
+# Entrées et Sorties
+
+---
+
+# Entrées/Sorties en C
 
 <v-clicks>
 
@@ -953,11 +977,21 @@ char nom[50];
 scanf("%s", nom);  // Pas de & pour les chaînes!
 ```
 
+## Formats 
+
+- Le formattage des données correspond à celui de `printf()`
+
 </v-clicks>
 
 ---
+layout: intro
+---
 
-# 04 - Structures de contrôle
+# Structures de contrôle
+
+---
+
+# Structures de contrôle
 
 <v-clicks>
 
@@ -1350,5 +1384,3 @@ do
 </v-clicks>
 
 </div>
-
----

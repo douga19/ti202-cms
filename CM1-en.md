@@ -1,7 +1,7 @@
 ---
 theme: default
 background: #e9e9e9
-layout: cover
+class: cover
 highlighter: shiki
 lineNumbers: false
 info: |
@@ -105,29 +105,35 @@ TI202I - Data Structures and Programming 1
 
 ---
 
-
-# Course Outline
+# Course Plan
 
 <v-clicks>
 
 1. **Introduction to C Language**
 
-2. **C Language Elements**
-   - Variables and Types
-   - Operators
-   - Type Conversion
+2. **Variables, Types and Operators**
+    - Variables and Types
+    - Operators
+    - Type Conversion
 
 3. **Input/Output in C**
-   - `printf()` 
-   - `scanf()`
+    - `printf()` 
+    - `scanf()`
 
 4. **Control Structures**
-   - Conditionals (`if`, `else`, `switch`)
-   - Loops (`while`, `for`, `do-while`)
+    - Conditionals (`if`, `else`, `switch`)
+    - Loops (`while`, `for`, `do-while`)
 
 </v-clicks>
 
 ---
+layout: intro
+---
+
+# Introduction to C Language
+
+---
+
 
 # Why the C Language?
 
@@ -140,7 +146,11 @@ TI202I - Data Structures and Programming 1
 - 🔗 **High-level assembler** - close to the machine
 - 🌍 **Highly portable** - works everywhere
 - ⚡ **Efficient code** - optimal performance
-- 🏗️ **Foundation** for other languages (Perl, Java, Python, PHP...)
+- 🏗️ **Foundation** for many applications:
+    - Operating systems (Linux, Windows)
+    - Databases (MySQL, PostgreSQL)
+    - Development tools (GCC, Git)
+    - Modern languages (Python, Java, etc.)
 
 </v-clicks>
 
@@ -312,13 +322,16 @@ int main() {
 └─────────────────┘
 ```
 
-⚠️ To compile and execute a C program, you will need a compiler.
+### Compiler
+
+- ⚠️ To compile and execute a C program, you will need a *compiler*.
+- ✅ We will use `gcc` in this course.
 
 </v-clicks>
 
 ---
 
-# 02 - Structure of a C Program
+# Structure of a C Program
 
 <v-clicks>
 
@@ -374,6 +387,12 @@ int sum;
 - 🚫 Comment out code to temporarily disable it
 
 </v-clicks>
+
+---
+layout: intro
+---
+
+# Variables, Types and Operators
 
 ---
 
@@ -620,7 +639,8 @@ x--;       // x is 6
 
 ---
 
-# Difference: Pre vs Post
+
+## Difference: Pre vs Post
 
 <v-clicks>
 
@@ -649,16 +669,16 @@ b = ++x;    // x = 4, then b = 4
 
 | Operator | Name | Effect | Example | Result |
 |-----------|-----|-------|---------|----------|
-| `==` | Equality | Compares two values | `7 == 3` | `0` (false) |
+| == | Equality (double equals) | Compares two values | `7 == 3` | `0` (false) |
 | `<` | Less than | Strictly less than | `7 < 10` | `1` (true) |
-| `<=` | Less or equal | Less than or equal | `7 <= 7` | `1` (true) |
+| <= | Less or equal | Less than or equal | `7 <= 7` | `1` (true) |
 | `>` | Greater than | Strictly greater than | `7 > 3` | `1` (true) |
-| `>=` | Greater or equal | Greater than or equal | `7 >= 10` | `0` (false) |
-| `!=` | Not equal | Verify difference | `7 != 3` | `1` (true) |
+| >= | Greater or equal | Greater than or equal | `7 >= 10` | `0` (false) |
+| != | Not equal | Verify difference | `7 != 3` | `1` (true) |
 
 ### ⚠️ Important
 - Returns `1` if true, `0` if false
-- **Do not confuse** `=` (assignment) and `==` (comparison)!
+- **Do not confuse** `=` (assignment) and == (comparison)!
 
 </v-clicks>
 
@@ -798,7 +818,7 @@ int main() {
 
 <v-click>
 
-### Modern solution: `<stdbool.h>`
+### Since C99: `<stdbool.h>` | Not used in this course
 ```c
 #include <stdbool.h>
 int main() {
@@ -813,8 +833,14 @@ int main() {
 </v-click>
 
 ---
+layout: intro
+---
 
-# 03 - Input/Output in C
+# Input/Output in C
+
+---
+
+# Input/Output in C
 
 <v-clicks>
 
@@ -960,8 +986,14 @@ scanf("%s", name);  // No & for strings!
 </v-clicks>
 
 ---
+layout: intro
+---
 
-# 04 - Control Structures
+# Control Structures
+
+---
+
+# Control Structures
 
 <v-clicks>
 
@@ -1355,4 +1387,3 @@ do
 
 </div>
 
----
