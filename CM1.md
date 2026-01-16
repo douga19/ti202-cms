@@ -667,9 +667,9 @@ b = ++x;    // x = 4, puis b = 4
 |-----------|-----|-------|---------|----------|
 | == | Égalité (double égal) | Compare deux valeurs | `7 == 3` | `0` (faux) |
 | `<` | Inférieur | Strictement inférieur | `7 < 10` | `1` (vrai) |
-| `<=` | Inférieur ou égal | Inférieur ou égal | `7 <= 7` | `1` (vrai) |
+| <= | Inférieur ou égal | Inférieur ou égal | `7 <= 7` | `1` (vrai) |
 | `>` | Supérieur | Strictement supérieur | `7 > 3` | `1` (vrai) |
-| `>=` | Supérieur ou égal | Supérieur ou égal | `7 >= 10` | `0` (faux) |
+| >= | Supérieur ou égal | Supérieur ou égal | `7 >= 10` | `0` (faux) |
 | != | Différent (!=) | Vérifier la différence | `7 != 3` | `1` (vrai) |
 
 ### ⚠️ Important
