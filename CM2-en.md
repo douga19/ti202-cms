@@ -693,7 +693,7 @@ int main() {
     int r = n - 1;     
     
     while (l <= r && !found) {
-        m = (l + r) / 2;       
+        m = l + (r - l) / 2;       
         if (A[m] == value) {
             found = 1;         
         } else if (value > A[m]) {
